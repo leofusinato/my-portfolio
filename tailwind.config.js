@@ -18,6 +18,24 @@ export default {
           600: "#E2E4E9",
         },
       },
+      fontFamily: {
+        asap: ["Asap", "sans-serif"],
+        inconsolata: ["Inconsolata", "sans-serif"],
+        mavenpro: ["Maven Pro", "sans-serif"],
+      },
+      fontSize: {
+        // titles
+        "title-lg": ["56px", { lineHeight: "120%", fontWeight: "700" }],
+        "title-md": ["24px", { lineHeight: "120%", fontWeight: "700" }],
+        "title-sm": ["16px", { lineHeight: "120%", fontWeight: "700" }],
+
+        //subtitle
+        subtitle: ["20px", { lineHeight: "120%", fontWeight: "400" }],
+
+        //text
+        md: ["16px", { lineHeight: "140%", fontWeight: "400" }],
+        sm: ["14px", { lineHeight: "140%", fontWeight: "400" }],
+      },
     },
   },
   plugins: [],
