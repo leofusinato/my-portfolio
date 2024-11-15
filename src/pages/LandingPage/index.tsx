@@ -1,6 +1,10 @@
 import "../../App.css";
 import { Icons } from "../../assets/icons";
 import { Images } from "../../assets/images";
+import ProjectItem from "./components/ProjectItem";
+import ServiceCard from "./components/ServiceCard";
+import TechSkill from "./components/TechSkill";
+import ContactCard from "./ContactCard";
 
 function LandingPage() {
   return (
@@ -32,54 +36,31 @@ function LandingPage() {
           </span>
 
           <div className="flex gap-4 mb-24">
-            <a
-              href="https://github.com/leofusinato"
-              target="_blank"
-              rel="noreferrer"
-              className="flex px-4 py-2 gap-2 rounded-full bg-gray-300 items-center"
-            >
-              <img src={Icons.GithubLogo} />
-              <span className="text-md font-mavenpro text-gray-500">
-                GitHub
-              </span>
-            </a>
+            <TechSkill
+              label="GitHub"
+              icon={Icons.GithubLogo}
+              link="https://github.com/leofusinato"
+            />
 
-            <a
-              href="https://reactnative.dev/"
-              target="_blank"
-              rel="noreferrer"
-              className="flex px-4 py-2 gap-2 rounded-full bg-gray-300 items-center"
-            >
-              <img src={Icons.ReactNativeLogo} />
-              <span className="text-md font-mavenpro text-gray-500">
-                React Native
-              </span>
-            </a>
+            <TechSkill
+              label="React Native"
+              icon={Icons.ReactNativeLogo}
+              link="https://reactnative.dev/"
+            />
 
-            <a
-              href="https://nodejs.org/en"
-              target="_blank"
-              rel="noreferrer"
-              className="flex px-4 py-2 gap-2 rounded-full bg-gray-300 items-center"
-            >
-              <img src={Icons.NodeLogo} />
-              <span className="text-md font-mavenpro text-gray-500">
-                Node.js
-              </span>
-            </a>
+            <TechSkill
+              label="Node.js"
+              icon={Icons.NodeLogo}
+              link="https://nodejs.org/en"
+            />
 
-            <a
-              href="https://www.typescriptlang.org/"
-              target="_blank"
-              rel="noreferrer"
-              className="flex px-4 py-2 gap-2 rounded-full bg-gray-300 items-center"
-            >
-              <img src={Icons.TypescriptLogo} />
-              <span className="text-md font-mavenpro text-gray-500">
-                Typescript
-              </span>
-            </a>
+            <TechSkill
+              label="Typescript"
+              icon={Icons.TypescriptLogo}
+              link="https://www.typescriptlang.org/"
+            />
           </div>
+
           <img src={Icons.CaretDoubleDown} />
 
           <div className="mt-20 flex flex-col items-center">
@@ -93,22 +74,13 @@ function LandingPage() {
           </div>
 
           <div className="grid gap-6 mt-14 grid-cols-1">
-            <div className="max-w-[330px] px-3 pt-3 pb-[17px] bg-gray-300 rounded-xl flex flex-col">
-              <img
-                src={Images.ElderageImage}
-                alt="elderage image"
-                className="max-w-[306px] rounded-xl"
-              />
-
-              <span className="font-asap text-title-sm text-gray-600 mt-5 mb-2">
-                Elderage
-              </span>
-
-              <span className="font-mavenpro text-sm text-gray-500">
-                Aplicativo para auxiliar nas tarefas do dia a dia de cuidadores
-                de idosos
-              </span>
-            </div>
+            <ProjectItem
+              image={Images.ElderageImage}
+              alt="elderage image"
+              title="Elderage"
+              description="Aplicativo para auxiliar nas tarefas do dia a dia de cuidadores
+                de idosos"
+            />
           </div>
         </div>
 
@@ -124,37 +96,23 @@ function LandingPage() {
           </div>
 
           <div className="grid grid-cols-2 mt-14 gap-6">
-            <div className="flex flex-col p-5 max-w-[280px] border border-gray-200 rounded-xl">
-              <img src={Icons.Devices} alt="devices" width={48} height={48} />
+            <ServiceCard
+              icon={Icons.Devices}
+              alt="devices icon"
+              title="Websites e Aplicativos"
+              description="Desenvolvimento de interfaces de alto nível escalável de acordo
+                com a necessidade do cliente"
+            />
 
-              <span className="mt-5 font-asap text-title-sm text-gray-600">
-                Websites e Aplicativos
-              </span>
-
-              <span className="mt-2 font-mavenpro text-sm text-gray-500">
-                Desenvolvimento de interfaces de alto nível escalável de acordo
-                com a necessidade do cliente
-              </span>
-            </div>
-
-            <div className="flex flex-col p-5 max-w-[280px] border border-gray-200 rounded-xl">
-              <img
-                src={Icons.HardDrives}
-                alt="devices"
-                width={48}
-                height={48}
-              />
-
-              <span className="mt-5 font-asap text-title-sm text-gray-600">
-                API e banco de dados
-              </span>
-
-              <span className="mt-2 font-mavenpro text-sm text-gray-500">
-                Criação de serviços do sistema
-              </span>
-            </div>
+            <ServiceCard
+              icon={Icons.HardDrives}
+              alt="hard drives icon"
+              title="API e banco de dados"
+              description="Criação de serviços do sistema"
+            />
           </div>
         </div>
+
         <div className="flex flex-col pt-[128px] pb-[200px]">
           <div className="flex flex-col gap-2 justify-center items-center">
             <span className="font-inconsolata text-subtitle text-purple">
@@ -171,93 +129,33 @@ function LandingPage() {
           </div>
 
           <div className="mt-12 flex flex-col gap-4">
-            <a
-              href="https://www.linkedin.com/in/leonardo-alex-fusinato-210419194/"
-              target="_blank"
-              rel="noreferrer"
-              className="p-5 rounded-lg bg-gray-300 flex items-center justify-between"
-            >
-              <div className="flex items-center gap-3">
-                <img src={Icons.LinkedinLogo} alt="linkedin logo" />
-                <span className="text-gray-500 font-mavenpro text-md">
-                  Linkedin
-                </span>
-              </div>
+            <ContactCard
+              icon={Icons.LinkedinLogo}
+              alt="linkedin logo"
+              link="https://www.linkedin.com/in/leonardo-alex-fusinato-210419194/"
+              label="Linkedin"
+            />
 
-              <img
-                src={Icons.ArrowUpRight}
-                alt="arrow up right"
-                className="fill-blue"
-                width={24}
-                height={24}
-              />
-            </a>
+            <ContactCard
+              icon={Icons.InstagramLogo}
+              alt="instagram logo"
+              link="https://instagram.com/leeofusinato"
+              label="Instagram"
+            />
 
-            <a
-              href="https://instagram.com/leeofusinato"
-              target="_blank"
-              rel="noreferrer"
-              className="p-5 rounded-lg bg-gray-300 flex items-center justify-between"
-            >
-              <div className="flex items-center gap-3">
-                <img src={Icons.InstagramLogo} alt="linkedin logo" />
-                <span className="text-gray-500 font-mavenpro text-md">
-                  Instagram
-                </span>
-              </div>
+            <ContactCard
+              icon={Icons.GithubLogo}
+              alt="github logo"
+              link="https://github.com/leofusinato"
+              label="GitHub"
+            />
 
-              <img
-                src={Icons.ArrowUpRight}
-                alt="arrow up right"
-                className="fill-blue"
-                width={24}
-                height={24}
-              />
-            </a>
-
-            <a
-              href="https://github.com/leofusinato"
-              target="_blank"
-              rel="noreferrer"
-              className="p-5 rounded-lg bg-gray-300 flex items-center justify-between"
-            >
-              <div className="flex items-center gap-3">
-                <img src={Icons.GithubLogo} alt="linkedin logo" />
-                <span className="text-gray-500 font-mavenpro text-md">
-                  GitHub
-                </span>
-              </div>
-
-              <img
-                src={Icons.ArrowUpRight}
-                alt="arrow up right"
-                className="fill-blue"
-                width={24}
-                height={24}
-              />
-            </a>
-
-            <a
-              href="mailto:leonardo.alex.fusinato@gmail.com"
-              target="_blank"
-              rel="noreferrer"
-              className="p-5 rounded-lg bg-gray-300 flex items-center justify-between"
-            >
-              <div className="flex items-center gap-3">
-                <img src={Icons.EnvelopeSimple} alt="linkedin logo" />
-                <span className="text-gray-500 font-mavenpro text-md">
-                  Email
-                </span>
-              </div>
-
-              <img
-                src={Icons.ArrowUpRight}
-                alt="arrow up right"
-                className="fill-blue"
-                width={24}
-                height={24}
-              />
-            </a>
+            <ContactCard
+              icon={Icons.EnvelopeSimple}
+              alt="email logo"
+              link="mailto:leonardo.alex.fusinato@gmail.com"
+              label="Email"
+            />
           </div>
         </div>
       </div>
