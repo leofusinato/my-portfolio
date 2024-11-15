@@ -1,8 +1,8 @@
-import "./App.css";
-import { Icons } from "./assets/icons";
-import { Images } from "./assets/images";
+import "../../App.css";
+import { Icons } from "../../assets/icons";
+import { Images } from "../../assets/images";
 
-function App() {
+function LandingPage() {
   return (
     <div className="flex flex-col flex-1 justify-center items-center">
       <div className="w-full justify-center items-center flex flex-1 flex-col mt-[120px]">
@@ -265,4 +265,4 @@ function App() {
   );
 }
 
-export default App;
+export default LandingPage;
