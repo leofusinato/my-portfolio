@@ -4,7 +4,7 @@ import { Images } from "../../assets/images";
 import ProjectItem from "./components/ProjectItem";
 import ServiceCard from "./components/ServiceCard";
 import TechSkill from "./components/TechSkill";
-import ContactCard from "./ContactCard";
+import ContactCard from "./components/ContactCard";
 
 function LandingPage() {
   return (
