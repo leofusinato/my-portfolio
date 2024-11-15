@@ -7,6 +7,9 @@ import HardDrives from "./hard-drives.svg";
 import Infinity from "./infinity.svg";
 import InstagramLogo from "./instagram-logo.svg";
 import LinkedinLogo from "./linkedin-logo.svg";
+import NodeLogo from "./node-logo.svg";
+import ReactNativeLogo from "./react-native-logo.svg";
+import TypescriptLogo from "./typescript-logo.svg";
 
 export const Icons = {
   ArrowUpRight,
@@ -18,4 +21,7 @@ export const Icons = {
   Infinity,
   InstagramLogo,
   LinkedinLogo,
+  NodeLogo,
+  ReactNativeLogo,
+  TypescriptLogo,
 };
