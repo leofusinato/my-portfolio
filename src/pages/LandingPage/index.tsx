@@ -23,9 +23,6 @@ function LandingPage() {
             alt="profile image"
           />
 
-          <span className="text-white">{t("role")}</span>
-          <span className="text-white">{i18n.t("landingPage:role")}</span>
-
           <span className="font-inconsolata text-subtitle mt-14 text-gray-500 mb-2 text-center">
             {t("greeting.part1")}{" "}
             <span className="text-red">Leonardo Alex Fusinato</span>{" "}
