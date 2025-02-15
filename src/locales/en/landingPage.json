@@ -1,0 +1,37 @@
+{
+    "greeting": {
+        "part1": "Hello World! My name is",
+        "part2": "and I'm"
+    },
+    "role": "Mobile Developer",
+    "generalDescription": "I Transform needs into real, evolving and functional applications. I develop apps through my passion for technology, contributing to innovative and effective solutions to complex challenges.",
+    "myWork": {
+        "title": "My work",
+        "description": "Check the highlighted projects"
+    },
+    "projects": {
+        "1": {
+            "title": "Elderage",
+            "description": "Application to assist in the day-to-day tasks of elderly caregivers"
+        }
+    },
+    "myServices": {
+        "title": "My services",
+        "description": "How I can help your business",
+        "1": {
+            "title": "Websites and apps",
+            "description": "Development of high level interfaces according to the client's needs"
+        },
+        "2": {
+            "title": "API and databases",
+            "description": "Creation of System Services"
+        }
+    },
+    "contact": {
+        "title": "Contact",
+        "description": {
+            "part1": "Did you like my work?",
+            "part2": "Contact or follow my social networks!"
+        }
+    }
+}

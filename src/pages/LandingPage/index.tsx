@@ -5,8 +5,12 @@ import ProjectItem from "./components/ProjectItem";
 import ServiceCard from "./components/ServiceCard";
 import TechSkill from "./components/TechSkill";
 import ContactCard from "./components/ContactCard";
+import { useTranslation } from "react-i18next";
+import i18n from "../../locales/i18next";
 
 function LandingPage() {
+  const { t } = useTranslation();
+
   return (
     <div className="flex flex-col flex-1 justify-center items-center px-6">
       <div className="w-full justify-center items-center flex flex-1 flex-col mt-[120px]">
@@ -19,20 +23,21 @@ function LandingPage() {
             alt="profile image"
           />
 
+          <span className="text-white">{t("role")}</span>
+          <span className="text-white">{i18n.t("landingPage:role")}</span>
+
           <span className="font-inconsolata text-subtitle mt-14 text-gray-500 mb-2 text-center">
-            Hello World! Meu nome é{" "}
-            <span className="text-red">Leonardo Alex Fusinato</span> e sou
+            {t("greeting.part1")}{" "}
+            <span className="text-red">Leonardo Alex Fusinato</span>{" "}
+            {t("greeting.part2")}
           </span>
 
           <span className="text-gray-600 font-asap text-title-lg mb-5 text-center">
-            Desenvolvedor Mobile
+            {t("role")}
           </span>
 
           <span className="text-gray-400 font-mavenpro text-sm text-center mb-20">
-            Transformo necessidades em aplicações reais, evolventes e
-            funcionais. Desenvolvo aplicativos através da minha paixão pela
-            tecnologia, contribuindo com soluções inovadoras e eficazes para
-            desafios complexos.
+            {t("generalDescription")}
           </span>
 
           <div className="flex gap-4 mb-24 flex-wrap justify-center">
@@ -65,11 +70,11 @@ function LandingPage() {
 
           <div className="mt-20 flex flex-col items-center">
             <span className="font-inconsolata text-subtitle text-red">
-              Meu trabalho
+              {t("myWork.title")}
             </span>
 
             <span className="mt-2 font-asap text-title-md text-gray-600">
-              Veja os projetos em destaque
+              {t("myWork.description")}
             </span>
           </div>
 
@@ -77,9 +82,8 @@ function LandingPage() {
             <ProjectItem
               image={Images.ElderageImage}
               alt="elderage image"
-              title="Elderage"
-              description="Aplicativo para auxiliar nas tarefas do dia a dia de cuidadores
-                de idosos"
+              title={t("projects.1.title")}
+              description={t("projects.1.description")}
               url="https://www.linkedin.com/posts/leonardo-alex-fusinato-210419194_ap%C3%B3s-um-longo-per%C3%ADodo-decidi-finalmente-activity-7123470691068170243-w_bw?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC2fvuwB2pRVXmk4VPf_W1L2HgaCESfk0Rs"
             />
           </div>
@@ -88,11 +92,11 @@ function LandingPage() {
         <div className="flex w-full flex-col flex-1 h-full items-center bg-gray-100 pt-[88px] pb-32 px-6">
           <div className="mt-20 flex flex-col items-center">
             <span className="font-inconsolata text-subtitle text-red">
-              Meus serviços
+              {t("myServices.title")}
             </span>
 
             <span className="mt-2 font-asap text-title-md text-gray-600">
-              Como posso ajudar o seu negócio
+              {t("myServices.description")}
             </span>
           </div>
 
@@ -100,16 +104,15 @@ function LandingPage() {
             <ServiceCard
               icon={Icons.Devices}
               alt="devices icon"
-              title="Websites e Aplicativos"
-              description="Desenvolvimento de interfaces de alto nível escalável de acordo
-                com a necessidade do cliente"
+              title={t("myServices.1.title")}
+              description={t("myServices.1.description")}
             />
 
             <ServiceCard
               icon={Icons.HardDrives}
               alt="hard drives icon"
-              title="API e banco de dados"
-              description="Criação de serviços do sistema"
+              title={t("myServices.2.title")}
+              description={t("myServices.2.description")}
             />
           </div>
         </div>
@@ -117,15 +120,15 @@ function LandingPage() {
         <div className="flex flex-col pt-[128px] pb-[200px]">
           <div className="flex flex-col gap-2 justify-center items-center">
             <span className="font-inconsolata text-subtitle text-purple">
-              Contato
+              {t("contact.title")}
             </span>
 
             <span className="text-gray-600 font-asap text-title-md">
-              Gostou do meu trabalho?
+              {t("contact.description.part1")}
             </span>
 
             <span className="text-gray-500 font-mavenpro text-md">
-              Entre em contato ou acompanhe as minhas redes sociais!
+              {t("contact.description.part2")}
             </span>
           </div>
 
