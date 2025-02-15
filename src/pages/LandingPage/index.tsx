@@ -6,7 +6,6 @@ import ServiceCard from "./components/ServiceCard";
 import TechSkill from "./components/TechSkill";
 import ContactCard from "./components/ContactCard";
 import { useTranslation } from "react-i18next";
-import i18n from "../../locales/i18next";
 
 function LandingPage() {
   const { t } = useTranslation();
