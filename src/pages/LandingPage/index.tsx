@@ -8,7 +8,7 @@ import ContactCard from "./components/ContactCard";
 
 function LandingPage() {
   return (
-    <div className="flex flex-col flex-1 justify-center items-center">
+    <div className="flex flex-col flex-1 justify-center items-center px-6">
       <div className="w-full justify-center items-center flex flex-1 flex-col mt-[120px]">
         <div className="max-w-[754px] justify-center items-center pt-40 pb-[144px] flex flex-1 flex-col">
           <img
@@ -19,12 +19,12 @@ function LandingPage() {
             alt="profile image"
           />
 
-          <span className="font-inconsolata text-subtitle mt-14 text-gray-500 mb-2">
+          <span className="font-inconsolata text-subtitle mt-14 text-gray-500 mb-2 text-center">
             Hello World! Meu nome é{" "}
             <span className="text-red">Leonardo Alex Fusinato</span> e sou
           </span>
 
-          <span className="text-gray-600 font-asap text-title-lg mb-5">
+          <span className="text-gray-600 font-asap text-title-lg mb-5 text-center">
             Desenvolvedor Mobile
           </span>
 
@@ -35,7 +35,7 @@ function LandingPage() {
             desafios complexos.
           </span>
 
-          <div className="flex gap-4 mb-24">
+          <div className="flex gap-4 mb-24 flex-wrap justify-center">
             <TechSkill
               label="GitHub"
               icon={Icons.GithubLogo}
@@ -84,7 +84,7 @@ function LandingPage() {
           </div>
         </div>
 
-        <div className="flex w-full flex-col flex-1 h-full items-center bg-gray-100 pt-[88px] pb-32">
+        <div className="flex w-full flex-col flex-1 h-full items-center bg-gray-100 pt-[88px] pb-32 px-6">
           <div className="mt-20 flex flex-col items-center">
             <span className="font-inconsolata text-subtitle text-red">
               Meus serviços
