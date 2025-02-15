@@ -80,6 +80,7 @@ function LandingPage() {
               title="Elderage"
               description="Aplicativo para auxiliar nas tarefas do dia a dia de cuidadores
                 de idosos"
+              url="https://www.linkedin.com/posts/leonardo-alex-fusinato-210419194_ap%C3%B3s-um-longo-per%C3%ADodo-decidi-finalmente-activity-7123470691068170243-w_bw?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC2fvuwB2pRVXmk4VPf_W1L2HgaCESfk0Rs"
             />
           </div>
         </div>
