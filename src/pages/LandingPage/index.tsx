@@ -13,11 +13,11 @@ function LandingPage() {
   return (
     <div className="flex flex-col flex-1 justify-center items-center px-6">
       <div className="w-full justify-center items-center flex flex-1 flex-col mt-[120px]">
-        <div className="max-w-[754px] justify-center items-center pt-40 pb-[144px] flex flex-1 flex-col">
+        <div className="max-w-[754px] justify-center items-center pt-20 pb-[144px] flex flex-1 flex-col">
           <img
             src="https://www.github.com/leofusinato.png"
-            width={96}
-            height={96}
+            width={150}
+            height={150}
             className="rounded-full border border-red p-1"
             alt="profile image"
           />
